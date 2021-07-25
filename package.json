@@ -1,14 +1,14 @@
 {
-  "name": "sails-hook-orm-mongoose",
-  "version": "0.2.1",
-  "description": "An example override for the `orm` hook in Sails.  Loads and instantiates your model files as Mongoose models instead of Waterline models.",
+  "name": "@funhouse-atelier/sails-hook-orm-mongoose",
+  "version": "1.0.0",
+  "description": "An override for the `orm` hook in Sails.  Loads and instantiates your model files as Mongoose models instead of Waterline models.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikermcneil/sails-hook-orm-mongoose.git"
+    "url": "git+https://github.com/FunhouseAtelier/sails-hook-orm-mongoose.git"
   },
   "keywords": [
     "sails",
@@ -18,15 +18,13 @@
     "hook",
     "orm-hook"
   ],
-  "author": "Mike McNeil",
+  "author": "Funhouse Atelier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikermcneil/sails-hook-orm-mongoose/issues"
+    "url": "https://github.com/FunhouseAtelier/sails-hook-orm-mongoose/issues"
   },
-  "homepage": "https://github.com/mikermcneil/sails-hook-orm-mongoose#readme",
   "dependencies": {
-    "lodash": "^4.0.0",
-    "mongoose": "^4.3.6"
+    "mongoose": "^5.13.3"
   },
   "sails": {
     "isHook": true
