@@ -12,7 +12,8 @@ The source code in this repo sets up conventions for how to go about:
 
 
 * removed lodash dependency
-* updated mongoose dependency to ^5.13.3
+* upgraded mongoose dependency to ^5.13.3
+
 
 
 
