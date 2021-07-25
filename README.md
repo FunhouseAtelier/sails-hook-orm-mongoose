@@ -11,6 +11,10 @@ The source code in this repo sets up conventions for how to go about:
  - and best practices for documentation; including declaring your override's dependencies/dependents, its configuration, and the public properties/methods it exposes on the `sails` app instance.
 
 
+* removed lodash dependency
+* updated mongoose dependency to ^5.13.3
+
+
 
 > #### IMPORTANT
 > This is **not** a drop-in replacement for the default ORM hook.  Unless you are a **relatively advanced Sails user who _is already using Mongoose_**, you should avoid using this package and opt to take advantage of the built-in support for Waterline.  The Waterline ORM is actively maintained by our core team, and is being used in production on projects large and small throughout the world.

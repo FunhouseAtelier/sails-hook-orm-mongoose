@@ -1,13 +1,15 @@
 /**
- * Module dependencies
+ * @module @funhouse-atelier/sails-hook-orm-mongoose
+ * @desc Loads and instantiates model files as Mongoose models.
  */
 
-var _ = require('lodash');
+/**
+ * Module dependencies
+ */
 var mongoose = require('mongoose');
 
-
-
 /**
+ * Module exports
  * @param  {SailsApp} sails
  * @return {Dictionary}
  */
