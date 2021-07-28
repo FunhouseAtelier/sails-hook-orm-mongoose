@@ -28,6 +28,12 @@ Disable the Waterline ORM hook by merging the following into your `.sailsrc` fil
 }
 ```
 
+## Related projects
+
+The default model generator in Sails is designed to generate Waterline data models. To generate Mongoose data models, see the [sails-generate-mongoose-model](https://github.com/FunhouseAtelier/sails-generate-mongoose-model) repository for a plugin generator.
+
+---
+
 Below is a copy of the README.md from the original project:
 
 ---
