@@ -28,6 +28,18 @@ Disable the Waterline ORM hook by merging the following into your `.sailsrc` fil
 }
 ```
 
+Merge your MongoDB connection URI into your `/config/local.js` file:
+
+```json
+module.exports = {
+  custom: {
+    mongo: {
+      connectionUri: '<yourConnectionUri>',
+    },
+  },
+};
+```
+
 ## Related projects
 
 The default model generator in Sails is designed to generate Waterline data models. To generate Mongoose data models, see the [sails-generate-mongoose-model](https://github.com/FunhouseAtelier/sails-generate-mongoose-model) repository for a plugin generator.
