@@ -30,7 +30,7 @@ Disable the Waterline ORM hook by merging the following into your `.sailsrc` fil
 
 Merge your MongoDB connection URI into your `/config/local.js` file:
 
-```json
+```js
 module.exports = {
   custom: {
     mongo: {
