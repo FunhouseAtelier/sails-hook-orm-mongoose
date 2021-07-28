@@ -1,12 +1,34 @@
 # sails-hook-orm-mongoose
 
-An example override for the `orm` hook in Sails.  Loads and instantiates your model files as Mongoose models instead of Waterline models.
+An override for the `orm` hook in Sails.  Loads and instantiates your model files as Mongoose models instead of Waterline models.
 
 This is a modified version of the original [sails-hook-orm-mongoose](https://github.com/mikermcneil/sails-hook-orm-mongoose) project, by Mike McNeil.
 
 The following changes were made:
 * removed lodash dependency
 * upgraded Mongoose dependency and logic compatibility from v4.3.6 to v5.13.3
+
+## Installation
+
+Install the Mongoose ORM hook:
+
+```bash
+npm install @funhouse-atelier/sails-hook-orm-mongoose
+```
+
+Disable the Waterline ORM hook by merging the following into your `.sailsrc` file:
+
+```json
+{
+  "hooks": {
+    "orm": false,
+    "pubsub": false,
+    "blueprints": false
+  }
+}
+```
+
+Below is a copy of the README.md from the original project:
 
 ---
 
@@ -23,28 +45,6 @@ The source code in this repo sets up conventions for how to go about:
 >
 > That said, if you choose to use this hook to override Waterline (the built-in ORM in Sails), realize that the documentation for blueprints, resourceful pubsub, models, adapters, connections, Waterline, etc. in Sails will be _no longer be applicable_ for your app!
 > Furthermore, please understand that this hook is an _example_, and is not a part of the Sails project proper.  This hook is stable and ready to use; and we will do our best to merge patches fixing confusing documentation or bugs (and we'd welcome a contribution with tests!!).  However, be aware that the core team's focus is on Waterline, so additional features and enhancements for this example will not be part of the Sails project's roadmap any time in the forseeable future-- any work in that department is up to you.
-
-
-## Installation
-
-From your Sails app:
-
-```bash
-npm install sails-hook-orm-mongoose --save
-```
-
-That's it!.... almost.  For the time being, you also need to disable the ORM hook.  To do so, merge the following into your `.sailsrc` file:
-
-```json
-{
-  "hooks": {
-    "orm": false,
-    "pubsub": false,
-    "blueprints": false
-  }
-}
-```
-
 
 ## Compatibility
 
