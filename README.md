@@ -2,6 +2,14 @@
 
 An example override for the `orm` hook in Sails.  Loads and instantiates your model files as Mongoose models instead of Waterline models.
 
+This is a modified version of the original [sails-hook-orm-mongoose](https://github.com/mikermcneil/sails-hook-orm-mongoose) project, by Mike McNeil.
+
+The following changes were made:
+* removed lodash dependency
+* upgraded Mongoose dependency and logic compatibility from v4.3.6 to v5.13.3
+
+---
+
 The purpose of this repo is twofold: on one hand, this hook aims to provide an easy way to replace Waterline support in Sails with a generic Mongoose setup for Sails users who have that use case.  But the primary goal of this repo is to provide a complete example of how to override any core hook in Sails-- in this case, specifically the ORM hook.
 
 The source code in this repo sets up conventions for how to go about:
@@ -9,13 +17,6 @@ The source code in this repo sets up conventions for how to go about:
  - choosing where and where not to overlap with Sails core features/config/methods
  - playing nicely with other core hooks
  - and best practices for documentation; including declaring your override's dependencies/dependents, its configuration, and the public properties/methods it exposes on the `sails` app instance.
-
-
-* removed lodash dependency
-* upgraded mongoose dependency to ^5.13.3
-
-
-
 
 > #### IMPORTANT
 > This is **not** a drop-in replacement for the default ORM hook.  Unless you are a **relatively advanced Sails user who _is already using Mongoose_**, you should avoid using this package and opt to take advantage of the built-in support for Waterline.  The Waterline ORM is actively maintained by our core team, and is being used in production on projects large and small throughout the world.
