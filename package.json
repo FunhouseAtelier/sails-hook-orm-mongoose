@@ -1,6 +1,6 @@
 {
   "name": "@funhouse-atelier/sails-hook-orm-mongoose",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An override for the `orm` hook in Sails.  Loads and instantiates your model files as Mongoose models instead of Waterline models.",
   "main": "index.js",
   "scripts": {
