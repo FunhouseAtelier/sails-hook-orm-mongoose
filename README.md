@@ -5,8 +5,9 @@ An override for the `orm` hook in Sails.  Loads and instantiates your model file
 This is a modified version of the original [sails-hook-orm-mongoose](https://github.com/mikermcneil/sails-hook-orm-mongoose) project, by Mike McNeil.
 
 The following changes were made:
-* removed lodash dependency
-* upgraded Mongoose dependency and logic compatibility from v4.3.6 to v5.13.3
+* upgraded Mongoose dependency and logic compatibility from v4.3.6 to v6.3.1
+* removed Lodash dependency (unnecessarily slow)
+* removed option to set sails.config.globals.models (redundant, already handled in config/globals.js)
 
 ## Installation
 
